@@ -1,0 +1,85 @@
+#define CUSTOM_SETTINGS
+#define INCLUDE_GAMEPAD_MODULE
+#include <Dabble.h>
+   
+int motor1Pin1 = 4; // Conecte ao terminal 1 do motor 1
+int motor1Pin2 = 5; // Conecte ao terminal 2 do motor 1
+int motor2Pin1 = 6; // Conecte ao terminal 1 do motor 2
+int motor2Pin2 = 7;
+   
+void setup()
+{
+   Serial.begin(250000);
+     
+
+  Dabble.begin(9600,9,8);  
+  pinMode(motor1Pin1, OUTPUT);
+  pinMode(motor1Pin2, OUTPUT);
+  pinMode(motor2Pin1, OUTPUT);
+  pinMode(motor2Pin2, OUTPUT);
+  Stop();
+}
+   
+   
+void loop() {
+   
+   
+Dabble.processInput();          
+
+if(GamePad.isUpPressed())
+{
+ forward(); 
+}
+else if(GamePad.isDownPressed())
+{
+ backward(); 
+}
+else if(GamePad.isLeftPressed())
+{
+ left(); 
+}
+else if(GamePad.isRightPressed())
+{
+ right(); 
+}
+else
+{
+ Stop(); 
+}
+   
+}
+void forward() {
+      Serial.println("esta funcionando");
+      digitalWrite(motor1Pin1, HIGH);
+      digitalWrite(motor1Pin2, LOW);
+      digitalWrite(motor2Pin1, HIGH);
+      digitalWrite(motor2Pin2, LOW);
+}
+      
+void backward() {
+      digitalWrite(motor1Pin1, LOW);
+      digitalWrite(motor1Pin2, HIGH);
+      digitalWrite(motor2Pin1, LOW);
+      digitalWrite(motor2Pin2, HIGH);
+}
+      
+void left() {
+      digitalWrite(motor1Pin1, LOW);
+      digitalWrite(motor1Pin2, HIGH);
+      digitalWrite(motor2Pin1, HIGH);
+      digitalWrite(motor2Pin2, LOW);   
+}
+      
+void right() {
+      digitalWrite(motor1Pin1, HIGH);
+      digitalWrite(motor1Pin2, LOW);
+      digitalWrite(motor2Pin1, LOW);
+      digitalWrite(motor2Pin2, HIGH);
+}
+      
+void Stop() {
+      digitalWrite(motor1Pin1, LOW);
+      digitalWrite(motor1Pin2, LOW);
+      digitalWrite(motor2Pin1, LOW);
+      digitalWrite(motor2Pin2, LOW);
+}
