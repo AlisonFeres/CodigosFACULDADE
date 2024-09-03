@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfólio - Alison Feres</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <a class="header-title" href="/">
+      <h1>
+       AlisonFeres.dev
+      </h1>
+    </a>
+
+
+    <nav class="navbar">
+      <button class="menu-hamburguer"></button>
+
+      <ul class="navbar-links">
+        <li><a href="#person">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contacts">Contatos</a></li>
+      </ul>
+    </nav>
+
+  </section>
+  <!-- End Header -->
+
+  <!-- Person -->
+  <section id="person">
+    <div class="person-content">
+      <div class="person-name">
+        <h1>Olá, <span></span></h1>
+        <h1>Meu nome é <span></span></h1>
+        <h1>Alison Feres <span></span></h1>
+      </div>
+
+      <div class="stacks-content">
+        <h3>Techs :</h3>
+
+
+        <ul class="stacks">
+          <li>
+            <div data="HTML">
+              <img src="./svg/html.svg" alt="html-icon">
+            </div>
+          </li>
+
+          <li>
+            <div data="CSS">
+              <img src="./svg/css.svg" alt="css-icon">
+            </div>
+          </li>
+
+          <li>
+            <div data="JS">
+              <img src="./svg/js.svg" alt="js-icon">
+            </div>
+          </li>
+
+          <li>
+            <div data="PYTHON">
+              <img src="./svg/PYPNG-removebg-preview.png" alt="python-icon">
+            </div>
+          </li>
+
+          <li>
+            <div data="JAVA">
+              <img src="./svg/java-removebg-preview.png" alt="java-icon">
+            </div>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="person-background">
+      <div class="wrapper-profile-photo">
+        <img class="profile-photo" src="./img/PHOTO-2024-06-13-12-04-21.jpg" alt="foto-alison-feres">
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/AlisonFeres" target="_blank">
+          <img src="./svg/logo-github.svg" alt="icon-github">
+        </a>
+        <a href="https://www.instagram.com/eaeferes/" target="_blank">
+          <img src="./svg/logo-insta.svg" alt="icon-insta">
+        </a>
+        <a href="https://www.linkedin.com/in/alison-feres-021052204/" target="_blank">
+          <img src="./svg/logo-linkedin.svg" alt="icon-linkin">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End Person -->
+
+  <!-- About -->
+  <section id="about">
+    <div class="background-about">
+      <div class="img-wrapper">
+        <img src="./img/img.2 (1).jpg" alt="img2-notebook">
+      </div>
+    </div>
+
+    <div class="box-about">
+      <div class="section-subtitle">
+        <h2>
+          <p>💻</p>
+          <p><span>Desenvolvedor</span> Iniciante</p>
+        </h2>
+      </div>
+
+      <h3>
+        Sou um Desenvolvedor Iniciante com conhecimento em
+        <p>HTML, CSS, JavaScript, Python, Java e SQL</p>
+      </h3>
+
+      <h4>
+        Meu nome é Alison Feres, tenho 23 anos e estou iniciando minha carreira na área de tecnologia. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas e sou apaixonado por tecnologia. Estou sempre em busca de novas oportunidades para aprender e crescer profissionalmente. Embora eu atue atualmente na área de logística, tenho um grande interesse em desenvolver minhas habilidades e conhecimentos em áreas novas e estou aberto a novas oportunidades que me permitam aplicar e expandir o que estou aprendendo.
+      </h4>
+
+      <h4>
+        Abaixo está o meu <p>currículo</p> para download.
+      </h4>
+
+      <div class="button-cta">
+        <a href="public/document/Curriculo Alison Feres (2).docx" download="Curriculo_Alison_Feres" arial-label="Baixar_Curriculo_Alison_Feres ">
+          Currículo
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- End about -->
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="projects-title">
+      <h2>PROJETOS 🧩</h2>
+    </div>
+
+    <div class="container-projects">
+      <div class="swiper mySwiper">
+        <!-- wrapper-projects -->
+
+        <div class="swiper-wrapper">
+
+          <!-- content-project -->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/calculador.jpg" alt="img-developer">
+              </a>
+            </div>
+
+            <span>Calculador de Autonomia Veicular</span>
+
+            <p>Esse projeto simula um calculador de autonomia veicular</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/AlisonFeres/CodigosFACULDADE/blob/main/aaaaaaaaaa.c" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="/">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="">
+                <img src="./img/cal_salario.png" alt="img-developer">
+              </a>
+            </div>
+
+            <span>Calculador de Salário</span>
+
+            <p>Formulário em HTML com um script PHP que calcula um aumento salarial baseado no valor inserido pelo usuário</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/AlisonFeres/CodigosFACULDADE/blob/main/Trabalho%20PHP%20-%20Alison%20Feres%20.php" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="/">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/INFO.webp" alt="img-developer">
+              </a>
+            </div>
+
+            <span>Documentação Aplicativo INFO ALUNOS</span>
+
+            <p>Nosso propósito é criar uma plataforma inovadora e cativante que facilite a conexão, colaboração e compartilhamento de experiências entre os alunos.</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/DouglasHigashi/Info-Alunos"  target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="/">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/arduino.jpeg" alt="img-developer">
+              </a>
+            </div>
+
+            <span>Arduino (Carrinho de Controle Remoto)</span>
+
+            <p>Este projeto é um carrinho Arduino controlado por celular, projetado para oferecer uma experiência interativa e educativa de programação e robótica</p>
+
+            <div class="cta-project">
+              <a href="https://github.com/AlisonFeres/CodigosFACULDADE/blob/main/Código%20Arduino" target="_blank">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="/">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          
+           <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+                <img src="./img/foto_port.png" alt="img-developer">
+              </a>
+            </div>
+
+            <span>Meu Portfólio</span>
+
+            <p>Esse projeto, simula um calculador de autonomia veicular</p>
+
+            <div class="cta-project">
+              <a href="/">
+                Código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="/">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+        </div> 
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+
+
+      </div>
+    </div>
+
+
+  </section>
+  <!-- End Projects -->
+
+  <section id="contacts">
+    <div class="contact-icon-content">
+      <h2>Contatos 📞</h2>
+    </div>
+
+    <div class="contact-icons-wrapper">
+      <div class="contact-icon-content">
+        <div class="contact-icon">
+          <i class="fa-solid fa-map-location-dot"></i>
+        </div>
+        <div class="contact-info">
+          <span>Localização</span>
+          <p>Indaiatuba-SP, Brasil</p>
+        </div>
+      </div>
+
+      <div class="contact-icon-content">
+        <div class="contact-icon">
+          <i class="fa-solid fa-envelope-open-text"></i>
+        </div>
+        <div class="contact-info">
+          <span>E-mail</span>
+          <a href="mailto:alisonferes@gmail.com">
+            alisonferes@gmail.com
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container-footer">
+      <h2>Feito por</h2>
+      <h3>Alison Feres © 2024</h3>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>
